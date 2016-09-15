@@ -1,5 +1,4 @@
 /** @jsx createElement */
-import _ from 'lodash'
 import { createElement } from 'elliptical'
 import { BooleanCommand, BooleanSetting } from 'lacona-phrases'
 import { showNotification } from 'lacona-api'

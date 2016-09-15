@@ -22,14 +22,10 @@
     "url": "https://github.com/brandonhorst/lacona-dash.git"
   },
   "dependencies": {
-    "child-process-promise": "^2.1.3",
     "elliptical": "^1.2.0",
-    "fs-es6-promise": "0.0.2",
     "is-running": "^2.1.0",
     "lacona-api": "^1.4.0",
-    "lacona-phrases": "^1.0.1",
-    "lacona-source-helpers": "^1.0.0",
-    "lodash": "^4.15.0"
+    "lacona-phrases": "^1.0.1"
   },
   "devDependencies": {
     "babel-plugin-transform-react-jsx": "^6.8.0",
