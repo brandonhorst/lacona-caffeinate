@@ -1,0 +1,52 @@
+{
+  "name": "lacona-caffeinate",
+  "version": "1.0.0",
+  "description": "Lacona Addon for starting caffeinate (OSX util to prevent sleep)",
+  "main": "lib/index.js",
+  "lacona": {
+    "title": "Caffeinate",
+    "description": "Prevent the computer from sleeping using the caffeinate utility"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "lacona",
+    "lacona-addon"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonhorst/lacona-dash.git"
+  },
+  "dependencies": {
+    "child-process-promise": "^2.1.3",
+    "elliptical": "^1.2.0",
+    "fs-es6-promise": "0.0.2",
+    "is-running": "^2.1.0",
+    "lacona-api": "^1.4.0",
+    "lacona-phrases": "^1.0.1",
+    "lacona-source-helpers": "^1.0.0",
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-cli": "^6.14.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-preset-es2015-node": "^6.1.1",
+    "rimraf": "^2.5.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node"
+    ],
+    "plugins": [
+      "transform-async-to-generator",
+      "syntax-async-functions",
+      "transform-react-jsx"
+    ]
+  }
+}
