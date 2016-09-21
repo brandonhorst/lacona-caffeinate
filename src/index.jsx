@@ -31,7 +31,6 @@ function writeFile (file, content) {
 async function getCurrentPID () {
   // get the pid file path
   const pidFilePath = getPIDPath()
-  console.log(pidFilePath)
 
   // try to read it
   let existingPID = null
@@ -40,8 +39,6 @@ async function getCurrentPID () {
   } catch (e) {}
 
   // if we got a pid, see if it actually exists
-  console.log(existingPID)
-  console.log(isRunning(existingPID))
   if (existingPID && !isRunning(existingPID)) {
     existingPID = null
   }
@@ -52,7 +49,6 @@ async function getCurrentPID () {
 async function setCurrentPID (pid) {
   // get the pid file path
   const pidFilePath = getPIDPath()
-  console.log(pidFilePath)
 
   await writeFile(pidFilePath, pid.toString())
 }
@@ -74,7 +70,6 @@ async function setCaffeinate (enabled) {
       await setCurrentPID(pid)
       await showNotification({title: 'Caffeinate', subtitle: 'Enabling Caffeinate'})
     } else {
-      console.log(existingPID, 'kill')
       if (existingPID) {
         process.kill(existingPID, 'SIGINT')
         await showNotification({title: 'Caffeinate', subtitle: 'Disabling Caffeinate'})
