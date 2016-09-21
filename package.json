@@ -1,6 +1,6 @@
 {
   "name": "lacona-caffeinate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lacona Addon for starting caffeinate (OSX util to prevent sleep)",
   "main": "lib/index.js",
   "lacona": {
