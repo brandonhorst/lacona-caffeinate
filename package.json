@@ -5,7 +5,14 @@
   "main": "lib/index.js",
   "lacona": {
     "title": "Caffeinate",
-    "description": "Prevent the computer from sleeping using the caffeinate utility"
+    "description": "Prevent the computer from sleeping using the caffeinate utility",
+    "iconURL": "https://raw.githubusercontent.com/brandonhorst/lacona-caffeinate/master/icon.png",
+    "examples": [
+      "caffeinate",
+      "turn off [caffeinate](setting)",
+      "caffeinate for [20 minutes](time duration)"
+    ],
+    "engine": "<=1.1.0"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
