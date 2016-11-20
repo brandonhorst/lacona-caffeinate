@@ -12,7 +12,7 @@
       "turn off [caffeinate](setting)",
       "caffeinate for [20 minutes](time duration)"
     ],
-    "engine": "<=1.1.0"
+    "engine": ">=1.1.0"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
