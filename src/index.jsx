@@ -64,7 +64,7 @@ async function setCaffeinate (enabled) {
         return
       }
 
-      const proc = spawn('/usr/bin/caffeinate')
+      const proc = spawn('/usr/bin/caffeinate', ['-d', '-i'])
       const pid = proc.pid
 
       await setCurrentPID(pid)
